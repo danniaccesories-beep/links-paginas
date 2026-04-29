@@ -1,71 +1,87 @@
 <!DOCTYPE html>
+
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Danni Accesories</title>
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background: #F0EBE5;
-            color: #03086C;
 
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            text-align: center;
-        }
+```
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: #F0EBE5;
+        color: #03086C;
+        text-align: center;
+    }
 
-        .container {
-            width: 100%;
-        }
+    .container {
+        width: 100%;
+        max-width: 400px;
+        margin: auto;
+        padding: 20px;
+    }
 
+    .logo {
+        width: 120px;
+        margin: 20px auto;
+        display: block;
+    }
+
+    .link {
+        display: block;
+        margin: 12px 0;
+        padding: 14px;
+        width: 100%;
+        background: #03086C;
+        color: #FFFFFF;
+        text-decoration: none;
+        border-radius: 12px;
+        transition: 0.2s;
+        font-weight: bold;
+    }
+
+    .link:hover {
+        background: #050bb5;
+    }
+
+    .footer {
+        margin-top: 25px;
+        font-size: 12px;
+        opacity: 0.6;
+    }
+
+    /* 📱 Ajustes para pantallas pequeñas */
+    @media (max-width: 480px) {
         .logo {
-            width: 150px;
-            margin-bottom: 20px;
-            opacity: 0.95;
+            width: 100px;
         }
 
         .link {
-            display: block;
-            margin: 15px auto;
-            padding: 15px;
-            width: 80%;
-            max-width: 300px;
-            background: #03086C;
-            color: #FFFFFF;
-            text-decoration: none;
-            border-radius: 12px;
-            transition: 0.3s;
-            font-weight: bold;
+            font-size: 14px;
+            padding: 12px;
         }
+    }
+</style>
+```
 
-        .link:hover {
-            background: #050bb5;
-            transform: scale(1.05);
-        }
-
-        .footer {
-            margin-top: 30px;
-            font-size: 12px;
-            opacity: 0.6;
-        }
-    </style>
 </head>
 <body>
 
-    <div class="container">
+```
+<div class="container">
 
-        <img src="logo.png" alt="Danni Accessories" class="logo">
+    <img src="logo.png" alt="Danni Accessories" class="logo">
 
-        <a class="link" href="https://www.instagram.com/danni_accesories?igsh=MWpxdGsyYjI3eTFiOQ==">📸 Instagram</a>
-        <a class="link" href="https://www.facebook.com/share/1DhGVccXuK/" target="_blank">🔵 Facebook</a>
-        <a class="link" href="https://wa.me/message/LF4OAMSEG4P5P1" target="_blank">🟢 Whatsapp</a>
+    <a class="link" href="https://www.instagram.com/danni_accesories?igsh=MWpxdGsyYjI3eTFiOQ==">📸 Instagram</a>
+    <a class="link" href="https://www.facebook.com/share/1DhGVccXuK/" target="_blank">🔵 Facebook</a>
+    <a class="link" href="https://wa.me/message/LF4OAMSEG4P5P1" target="_blank">🟢 Whatsapp</a>
 
-        <div class="footer">© 2026 Danni Accessories</div>
+    <div class="footer">© 2026 Danni Accessories</div>
 
-    </div>
+</div>
+```
 
 </body>
 </html>
