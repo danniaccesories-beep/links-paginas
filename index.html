@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Danni Accesories</title>
+    <title>Danni Accessories</title>
 
     <style>
         body {
@@ -11,7 +11,6 @@
             font-family: Arial, sans-serif;
             background: #F0EBE5;
             color: #03086C;
-            text-align: center;
 
             display: flex;
             flex-direction: column;
@@ -23,25 +22,23 @@
             max-width: 400px;
             margin: auto;
             padding: 20px;
-
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
+            text-align: center;
             flex: 1;
         }
 
         .logo {
             width: 110px;
-            margin: 10px auto 25px;
+            margin: 20px auto 30px;
+            display: block;
         }
 
         .link {
             display: block;
-            margin: 10px 0;
+            margin: 12px 0;
             padding: 16px;
             width: 100%;
             background: #03086C;
-            color: #FFFFFF;
+            color: white;
             text-decoration: none;
             border-radius: 18px;
             font-weight: bold;
@@ -61,6 +58,18 @@
             opacity: 0.6;
             padding: 15px 0;
         }
+
+        /* 📱 Ajustes móviles */
+        @media (max-width: 480px) {
+            .logo {
+                width: 95px;
+            }
+
+            .link {
+                font-size: 15px;
+                padding: 14px;
+            }
+        }
     </style>
 </head>
 
@@ -68,11 +77,11 @@
 
     <div class="container">
 
-        <img src="logo.png" class="logo">
+        <img src="logo.png" alt="Danni Accessories" class="logo">
 
-        <a class="link" href="#">Instagram</a>
-        <a class="link" href="#">Facebook</a>
-        <a class="link" href="#">Whatsapp</a>
+        <a class="link" href="https://www.instagram.com/danni_accesories" target="_blank">📸 Instagram</a>
+        <a class="link" href="https://www.facebook.com/share/1DhGVccXuK/" target="_blank">🔵 Facebook</a>
+        <a class="link" href="https://wa.me/message/LF4OAMSEG4P5P1" target="_blank">🟢 WhatsApp</a>
 
     </div>
 
