@@ -17,34 +17,43 @@
             min-height: 100vh;
         }
 
+        /* CONTENEDOR PRINCIPAL */
         .container {
-            width: 100%;
-            max-width: 400px;
-            margin: auto;
-            padding: 20px;
-            text-align: center;
             flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
         }
 
+        /* LOGO */
         .logo {
-            width: 110px;
-            margin: 20px auto 30px;
-            display: block;
+            width: 120px;
+            margin-bottom: 40px;
         }
 
+        /* CONTENEDOR BOTONES */
+        .links {
+            width: 100%;
+            max-width: 350px;
+        }
+
+        /* BOTONES */
         .link {
             display: block;
-            margin: 12px 0;
-            padding: 16px;
             width: 100%;
+            margin: 12px 0;
+            padding: 18px;
             background: #03086C;
             color: white;
             text-decoration: none;
-            border-radius: 18px;
+            border-radius: 25px;
             font-weight: bold;
             font-size: 16px;
+            text-align: center;
 
-            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            box-shadow: 0 6px 15px rgba(0,0,0,0.15);
             transition: 0.2s;
         }
 
@@ -52,23 +61,12 @@
             transform: scale(0.97);
         }
 
+        /* FOOTER */
         .footer {
             text-align: center;
             font-size: 12px;
             opacity: 0.6;
-            padding: 15px 0;
-        }
-
-        /* 📱 Ajustes móviles */
-        @media (max-width: 480px) {
-            .logo {
-                width: 95px;
-            }
-
-            .link {
-                font-size: 15px;
-                padding: 14px;
-            }
+            padding: 20px 0;
         }
     </style>
 </head>
@@ -79,9 +77,11 @@
 
         <img src="logo.png" alt="Danni Accessories" class="logo">
 
-        <a class="link" href="https://www.instagram.com/danni_accesories" target="_blank">📸 Instagram</a>
-        <a class="link" href="https://www.facebook.com/share/1DhGVccXuK/" target="_blank">🔵 Facebook</a>
-        <a class="link" href="https://wa.me/message/LF4OAMSEG4P5P1" target="_blank">🟢 WhatsApp</a>
+        <div class="links">
+            <a class="link" href="https://www.instagram.com/danni_accesories" target="_blank">📸 Instagram</a>
+            <a class="link" href="https://www.facebook.com/share/1DhGVccXuK/" target="_blank">🔵 Facebook</a>
+            <a class="link" href="https://wa.me/message/LF4OAMSEG4P5P1" target="_blank">🟢 WhatsApp</a>
+        </div>
 
     </div>
 
