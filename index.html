@@ -1,4 +1,4 @@
-    <!DOCTYPE html>
+   <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
@@ -22,27 +22,48 @@
         }
 
         .logo {
-    width: 200px;
-    margin-bottom: 28px;
-    opacity: 0.95;
-}
+            width: 200px;
+            margin-bottom: 20px;
+            opacity: 0.95;
+        }
 
-.logo:hover {
-    transform: scale(1.05);
-}
+        /* QR */
+        .qr-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin: 25px 0;
+            flex-wrap: wrap;
+        }
 
+        .qr-item {
+            text-align: center;
+        }
+
+        .qr-item img {
+            width: 110px;
+            border-radius: 10px;
+        }
+
+        .qr-item p {
+            margin-top: 8px;
+            font-size: 14px;
+        }
+
+        /* Links */
         .link {
             display: block;
-            margin: 15px auto;
-            padding: 15px;
-            width: 80%;
-            max-width: 300px;
+            margin: 12px auto;
+            padding: 18px;
+            width: 85%;
+            max-width: 320px;
             background: #03086C;
             color: #FFFFFF;
             text-decoration: none;
             border-radius: 12px;
             transition: 0.3s;
             font-weight: bold;
+            font-size: 16px;
         }
 
         .link:hover {
@@ -51,7 +72,7 @@
         }
 
         .footer {
-            margin-top: 30px;
+            margin-top: 25px;
             font-size: 12px;
             opacity: 0.6;
         }
@@ -61,15 +82,34 @@
 
     <div class="container">
 
+        <!-- Logo -->
         <img src="logo.png" alt="Danni Accessories" class="logo">
 
-        <a class="link" href="https://www.instagram.com/danni_accesories?igsh=MWpxdGsyYjI3eTFiOQ==">📸 Instagram</a>
-        <a class="link" href="https://www.facebook.com/share/1DhGVccXuK/" target="_blank">🔵 Facebook</a>
-        <a class="link" href="https://wa.me/message/LF4OAMSEG4P5P1" target="_blank">🟢 Whatsapp</a>
+        <!-- QRs -->
+        <div class="qr-container">
+            <div class="qr-item">
+                <img src="qr-instagram.png" alt="Instagram">
+                <p>Instagram</p>
+            </div>
 
+            <div class="qr-item">
+                <img src="qr-facebook.png" alt="Facebook">
+                <p>Facebook</p>
+            </div>
+
+            <div class="qr-item">
+                <img src="qr-whatsapp.png" alt="WhatsApp">
+                <p>WhatsApp</p>
+            </div>
+        </div>
+
+        <!-- Links -->
+        <a class="link" href="https://instagram.com/tu_usuario" target="_blank">📸 Instagram</a>
+        <a class="link" href="https://facebook.com/tu_usuario" target="_blank">🔵 Facebook</a>
+        <a class="link" href="https://wa.me/57TU_NUMERO" target="_blank">🟢 WhatsApp</a>
+
+        <!-- Footer -->
         <div class="footer">© 2026 Danni Accessories</div>
-
-    </div>
 
 </body>
 </html>
